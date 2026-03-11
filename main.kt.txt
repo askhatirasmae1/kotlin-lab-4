@@ -1,1 +1,25 @@
+// Étape 2 – Définir la fonction getPoints
+// Cette fonction calcule les points en multipliant basePoints par boost
+fun getPoints(basePoints: Int, boost: Int): Int {
+    return basePoints * boost
+}
 
+// Étape 1 – Création du squelette de l’application
+fun main() {
+
+    // Variable score initialisée à 0
+    var score = 0
+    println("Score initial : $score")
+
+    // Première action
+    score += getPoints(10, 1)
+    println("Score après 1ère action : $score")
+
+    // Deuxième action
+    score += getPoints(20, 2)
+    println("Score après 2ème action : $score")
+
+    // Troisième action
+    score += getPoints(-10, 1)
+    println("Score final : $score")
+}
